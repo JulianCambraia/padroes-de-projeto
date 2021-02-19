@@ -9,10 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>comportamentais/observer/retorno-boleto-observer</module>
+        <module>comportamentais/observer/retorno-boleto-funcional-observer</module>
         <module>comportamentais/strategy/retorno-boleto</module>
         <module>comportamentais/strategy/retorno-boleto-funcional</module>
-        <module>comportamentais/strategy/observer</module>
-        <module>comportamentais/strategy/template-method</module>
         <module>comportamentais/template-method/retorno-boleto-template-funcional</module>
         <module>comportamentais/template-method/retorno-boleto-template</module>
         <module>comportamentais/template-method/modelagem</module>
