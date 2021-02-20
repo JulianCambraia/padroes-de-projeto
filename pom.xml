@@ -16,6 +16,7 @@
         <module>comportamentais/template-method/retorno-boleto-template-funcional</module>
         <module>comportamentais/template-method/retorno-boleto-template</module>
         <module>comportamentais/template-method/modelagem</module>
+        <module>comportamentais/template-method/union-strategy-template-method</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
