@@ -1,6 +1,6 @@
 # Padrões de Projeto Comportamentais
 
-####1. Strategy (Estratégia)
+#### 1. Strategy (Estratégia)
 
 "O padrão Strategy define uma família de algorítmos, encapsula cada um deles em os torna intercambiáveis.
 A estratégia deixa o algorítmo variar independentemente dos clientes que o utilizam."
@@ -9,4 +9,4 @@ A estratégia deixa o algorítmo variar independentemente dos clientes que o uti
 outra implementação, até mesmo em tempo de execução."
 
 
-####1.1. Definição
+#### 1.1. Definição
