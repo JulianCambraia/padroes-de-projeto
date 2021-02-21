@@ -23,6 +23,5 @@ execução;
 * não deseja-se que uma alteração em uma super classe afete sub classes.
 
 ### 1.3. Modelagem do Padrão
-![Alt text](./padroes-de-projeto/imagens/strategy-base-class-diagram.png?raw=true "Modelagem")
 
-![alt text](https://github.com/juliancambraia/padroes-de-projeto/blob/master/imagens/strategy-base-class-diagram.png?raw=true)
+![alt text](https://github.com/juliancambraia/padroes-de-projeto/blob/main/imagens/strategy-base-class-diagram.png?raw=true)
