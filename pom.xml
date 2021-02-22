@@ -17,10 +17,8 @@
         <module>comportamentais/template-method/retorno-boleto-template</module>
         <module>comportamentais/template-method/modelagem</module>
         <module>comportamentais/template-method/union-strategy-template-method</module>
-        <module>criacionais/builder</module>
-        <module>criacionais/factory-method</module>
-        <module>criacionais/simple-factory</module>
-        <module>criacionais/singleton</module>
+        <module>criacionais/simple-factory/retorno-boleto-simple-factory</module>
+        <module>criacionais/simple-factory/modelagem-simplefactory</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
