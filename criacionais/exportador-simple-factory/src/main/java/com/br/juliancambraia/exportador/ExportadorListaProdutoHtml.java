@@ -1,48 +1,53 @@
 package com.br.juliancambraia.exportador;
 
-public class ExportadorListaProdutoHtml extends AbstractExportadorListaProduto {
+import com.br.juliancambraia.exportador.entity.Produto;
+
+/**
+ * Exporta dados de uma lista de {@link Produto} para HTML.
+ *
+ * <p>Observe que, como estamos usando o padrão Simple Factory para instanciar
+ * objetos {@link ExportadorListaProduto}, as classes concretas como esta são definidas com visibilidade "package",
+ * não podendo ser acessadas fora do pacote.
+ * Assim, não teremos como instanciar diretamente tais classes.
+ * A Simple Factory faz isso pra nós.</p>
+ *
+ * @author Manoel Campos da Silva Filho
+ */
+class ExportadorListaProdutoHtml extends AbstractExportadorListaProduto {
     @Override
     public String abrirTabela() {
-        return null;
+        return "<table>\n";
     }
 
     @Override
     public String fecharTabela() {
-        return null;
+        return "</table>";
     }
 
     @Override
     public String abrirLinha() {
-        return null;
+        return "<tr>";
     }
 
     @Override
     public String fecharLinha() {
-        return null;
+        return "</tr>";
     }
 
     @Override
     public String fecharLinhaTitulos() {
-        return null;
+        return "";
     }
 
     @Override
     public String abrirColuna(String valor) {
-        return null;
+        return "<td>" + valor;
     }
 
     @Override
     public String fecharColuna() {
-        return null;
+        return "</td>";
     }
 
-    @Override
-    public ExportadorListaProduto newInstance() {
-        return null;
-    }
 
-    @Override
-    public ExportadorListaProduto newInstance(String extensaoArquivoExportacao) {
-        return null;
-    }
 }
