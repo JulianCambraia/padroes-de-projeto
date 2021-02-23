@@ -20,6 +20,7 @@
         <module>criacionais/simple-factory/retorno-boleto-simple-factory</module>
         <module>criacionais/simple-factory/modelagem-simplefactory</module>
         <module>criacionais/simple-factory/retorno-boleto-simple-factory-dynamic</module>
+        <module>criacionais/exportador-simple-factory</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
