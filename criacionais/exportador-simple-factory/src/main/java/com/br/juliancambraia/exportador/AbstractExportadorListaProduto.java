@@ -14,25 +14,33 @@ public abstract class AbstractExportadorListaProduto implements ExportadorListaP
         StringBuilder sb = new StringBuilder();
 
         sb.append(abrirTabela());
+
+        gerarColunasLinha(sb, TITULOS_COLUNAS);
+
+        gerarLinhasProdutos(sb, listaProdutos);
+
+        sb.append(fecharTabela());
+
+        return sb.toString();
+    }
+
+    private void gerarLinhasProdutos(StringBuilder sb, List<Produto> listaProdutos) {
+        listaProdutos.forEach(produto -> {
+            List<String> valores = Arrays.asList(
+                    String.valueOf(produto.getId()),
+                    produto.getNome(),
+                    String.valueOf(produto.getValor())
+            );
+            gerarColunasLinha(sb, valores);
+        });
+    }
+
+    private void gerarColunasLinha(StringBuilder sb, List<String> titulosColunas) {
         sb.append(abrirLinha());
         TITULOS_COLUNAS.forEach(titulo -> {
             sb.append(abrirColuna(titulo));
             sb.append(fecharColuna());
         });
         sb.append(fecharLinha());
-        sb.append(fecharTabela());
-
-        listaProdutos.forEach(produto -> {
-            sb.append(abrirLinha());
-            sb.append(abrirColuna(String.valueOf(produto.getId())));
-            sb.append(fecharLinha());
-            sb.append(abrirColuna(produto.getNome()));
-            sb.append(fecharLinha());
-            sb.append(abrirColuna(String.valueOf(produto.getValor())));
-            sb.append(fecharColuna());
-        });
-
-
-        return sb.toString();
     }
 }
