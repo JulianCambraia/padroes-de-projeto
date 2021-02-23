@@ -6,4 +6,4 @@ seria necessário implementar novas clases, não sendo uma solução viável.
 
 
 ![alt text](https://github.com/juliancambraia/padroes-de-projeto/blob/main/imagens/exportador-simple-factory.png?raw=true)
-
+Figure 1. Diagrama de classes para implementação do exportador de lista de produtos para HTML e Markdown.
